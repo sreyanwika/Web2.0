@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <title>connecting html to php</title>
+    </head>
+<body>
+    <!--inserting values thrgh php-->
+    <form action="Saction.php" method="post">
+    NAME:<input type="text" name="name"><br><br>
+    ROLLNUMBER:<input type="text" name="rollnum"><br><br>
+    CGPA:<input type="decimal" name="cgpa"><br><br>
+    MOBILE:<input type="text" name="mobilenumber"><br><br>
+    GENDER:<input type="radio" name="gender" value="M">MALE<br><br>
+           <input type="radio" name="gender" value="F">FEMALE<br><br><br>
+    BRANCH:<input type="text" name="branch"><br><br>
+    <input type="submit">
+    </form>
+    <p>click the given below link to open the another php file</p>
+    <!---fetching file of php  -->
+    <input type="button" value="click me" onclick="window.location='Sfetching.php'">
+</body></html>
