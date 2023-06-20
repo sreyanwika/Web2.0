@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <script type="text/javascript">
+            var a=new XMLHttpRequest();
+            a.onreadystatechange=function(){
+                if(a.readyState===4){
+                    document.getElementById("display").innerHTML=a.responseText;
+                }
+            }
+            function shw(){
+                a.open('GET','tym.php');
+                a.send();
+                document.getElementById("rs").syle.display='none';
+            }
+        </script>
+    </head>
+    <body>
+        <p>do u wanna c tymm</p>
+        <button id="rs" onclick="shw();">click</button>
+        <p id="display"></p>
+    </body>
+</html>

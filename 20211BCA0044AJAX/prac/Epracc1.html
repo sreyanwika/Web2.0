@@ -1,0 +1,29 @@
+<html>
+    <head><title>ajaxxx prggg</title>
+    <style type="text/css">
+     #decc{
+        size:100;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        color:bisque;
+     }
+    </style>
+    <script type="text/javascript">
+        var a=new XMLHttpRequest();
+        a.onreadystatechange=function(){
+            if(a.readyState==4){
+                document.getElementById('dis').innerHTML=a.responseText;
+            }
+        }
+        function ajj(){
+            a.open('GET','Eprac1.html');
+            a.send();
+            document.getElementById('huf').style.display='none';
+        }
+    </script>
+    </head>
+    <body>
+        <h1>hyyy</h1>
+        <button id="huf" onclick="ajj();">click</button>
+        <p id="dis"></p>
+    </body>
+</html>

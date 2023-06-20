@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <title>ajax simple program..</title>
+        <style type="text/css">
+        body{
+          color:blueviolet;
+          text-decoration: dotted;
+          display: block;
+        }
+        #wat{
+            color:blue;
+            font-style: italic;
+            text-align: center;
+        }
+
+        </style>
+        <script type="text/javascript">
+            var ob=new XMLHttpRequest();
+            ob.onreadystatechange=function(){
+                if(ob.readyState===4){
+                    document.getElementById('Ajaxdisplay').innerHTML=this.responseText;
+                }
+            }
+            function resl(){
+                ob.open('GET','prac1sub.html');
+                ob.send();
+                document.getElementById('response').style.display='none';
+            }
+
+        </script>
+    </head>
+    <body>
+        <p>Oops...</p>
+        <button id="response" onclick="resl();">click</button>
+        <div id="Ajaxdisplay"></div>
+        
+
+    </body>
+</html>

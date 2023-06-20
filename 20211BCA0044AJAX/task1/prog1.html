@@ -1,0 +1,20 @@
+<html>
+    <head><title>ajax..magicc goes hereee</title>
+    <script type="text/javascript">
+      var myob= new XMLHttpRequest();
+      myob.onload=function(){
+            document.getElementById('ajax-content').innerHTML=this.responseText;
+
+      };
+      function sendTheAjax(){
+        myob.open('GET','doc.txt');
+        myob.send();
+        document.getElementById('response').style.display='none';
+      }
+    </script></head>
+    <body>
+        <h1>let me say thisss.....</h1>
+        <button  onclick="sendTheAjax();" id="response">hereeeee</button>
+        <div id="ajax-content"></div>
+    </body>
+</html>

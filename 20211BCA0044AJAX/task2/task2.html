@@ -1,0 +1,49 @@
+<html>
+  <!--using ajax loading a text document.....-->
+    <body>
+<p>type the name in the text box....</p>
+<p>suggestions:<span id="hint"></span></p>
+<form>Enter name:<input type="text" onkeyup="shwhntres(this.value)"/></form>
+<script type="text/javascript">
+    function shwhntres(str){
+        if(str.length == 0){
+            document.getElementById("hint").innerHTML="";
+        return;
+        }
+        else{
+            var myob= new XMLHttpRequest();
+            myob.onload=function(){
+           document.getElementById("hint").innerHTML=this.responseText;
+
+            }
+
+  }
+  //this indicates the current object....onload property is used over here
+    myob.open('GET','task2.php?q='+str);
+    myob.send();
+  }
+</script>
+<!--<p>Start typing a name in the input field below:</p>
+<p>Suggestions: <span id="txtHint"></span></p>
+
+<form>
+First name: <input type="text" onkeyup="showHint(this.value)">
+</form>
+
+<script>
+function showHint(str) {
+  if (str.length == 0) {
+    document.getElementById("txtHint").innerHTML = "";
+    return;
+  } else {
+    const xmlhttp = new XMLHttpRequest();
+    xmlhttp.onload = function() {
+      document.getElementById("txtHint").innerHTML = this.responseText;
+    }
+  xmlhttp.open("GET", "task2.php?q=" + str);
+  xmlhttp.send();
+  }
+}
+</script>-->
+    </body>
+    </html>

@@ -1,0 +1,35 @@
+<html>
+    <head><title>ajax..magicc goes hereee</title>
+    <style type="text/css">
+     body{
+        color:aqua;
+        text-shadow: 100;
+     }
+     #supp{
+        font-style: italic;
+        font-weight: bolder;
+        text-decoration-color: greenyellow;
+        font-size: large;
+        color:blueviolet;
+     }
+    </style>
+    <script type="text/javascript">
+      var myob= new XMLHttpRequest();
+      myob.onreadystatechange=function(){
+        if(myob.readyState===4){
+            document.getElementById('ajax-content').innerHTML=myob.responseText;
+        }
+
+      };
+      function sendTheAjax(){
+        myob.open('GET','subprog.html');
+        myob.send();
+        document.getElementById('response').style.display='none';
+      }
+    </script></head>
+    <body>
+        <h1>Today is your special day!</h1>
+        <button  onclick="sendTheAjax();" id="response">what's that?</button>
+        <div id="ajax-content"></div>
+    </body>
+</html>

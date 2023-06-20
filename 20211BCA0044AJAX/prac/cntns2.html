@@ -1,0 +1,72 @@
+<form id="valid"  action="form handler" accept-charset="UTF-8">
+    <fieldset>
+    <legend>Ajax Form Validation Demo</legend>
+    
+    <p>Name: <input type="text" size="32" name="name">
+    <!--<input type="checkbox" disabled name="valid_name">--></p>
+    
+    <p>Email: <input type="text" size="32" id="email" name="email">
+    <!---<input id="valid_email" type="checkbox" disabled name="valid_email">--></p>
+    <div id="rsp_email"><!-- --></div>
+    
+    <p>Age: <input type="text" size="4" id="age" name="age" <small>(between 16 and 100)</small>
+    <!--<input id="valid_age" type="checkbox" disabled name="valid_age">--></p>
+    <div id="rsp_age"><!-- --></div>
+    
+    <p><input type="submit"></p>
+    
+    </fieldset>
+    </form>
+    
+    <script type="text/javascript">
+    
+      var vldtn = document.getElementById("valid");
+    
+      var checkForm = function(e) {
+    
+        var form = e.target;
+    
+        if(this.name.value == "") {
+          alert("Please enter your Name in the form");
+          this.name.focus();
+          e.preventDefault();
+          return;
+        }
+        if(this.email.value == "" || !this.valid_email.checked) {
+          alert("Please enter a valid Email address");
+          this.email.focus();
+          e.preventDefault();
+          return;
+        }
+        if(this.age.value == "" || !this.valid_age.checked) {
+          alert("Please enter an Age between 16 and 100");
+          this.age.focus();
+          e.preventDefault();
+          return;
+        }
+    
+        alert("Success!  The form has been completed, validated and is ready to be submitted...");
+        e.preventDefault();
+    
+      }
+    
+      Vldtn.addEventListener("submit", checkForm, false);
+    
+      Vldtn.name.addEventListener("change", function(e) {
+        this.value = this.value.replace(/^\s+|\s+$/g, "");
+        this.form.valid_name.checked = this.value;
+      }, false);
+    
+      Vldtn.email.addEventListener("change", function(e) {
+        if(this.value != "") {
+          callAjax("checkEmail", this.value, this.id);
+        }
+      }, false);
+    
+      Vldtn.age.addEventListener("keyup", function(e) {
+        if(this.value != "") {
+          callAjax("checkAge", this.value, this.id);
+        }
+      }, false);
+    
+    </script>
