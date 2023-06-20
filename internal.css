@@ -1,0 +1,8 @@
+h2,h3,h4{
+    color:grey;
+    width:250px;
+    height: 300px;
+    letter-spacing:4em;
+    margin-bottom:1em;
+    text-transform: capitalize;
+}
