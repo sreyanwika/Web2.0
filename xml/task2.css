@@ -1,0 +1,20 @@
+[category="cooking"]{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: blueviolet;
+    font-size: large;
+    font-style: inherit;
+    text-decoration: dotted;
+}
+[category="children"]{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color:aqua;
+    font-size: medium;
+    font-style: oblique;
+    text-decoration: dashed;
+}
+[category="web"]{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: darkcyan;
+    font-size: x-large;
+    text-decoration: overline;
+}

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/css" href="task1.css"?>
+<pu>
+<student>
+<RNo >20211BCA0044</RNo>
+<Name>sreyanwika</Name>
+<college>Presidency university</college>
+<branch>BCA</branch>
+<year>2023</year>
+<email>sreyanwika@gmail.com</email>
+</student>
+<student>
+<RNo>20211CSE0044</RNo>
+<Name>poorvitha</Name>
+<college>Presidency university</college>
+<branch>CSE</branch>
+<year>2023</year>
+<email>poorvi@gmail.com</email></student><br/>
+<student>
+<RNo>20211AI0044</RNo><br/>
+<Name>harshini</Name><br/>
+<college>Presidency university</college><br/>
+<branch>AI</branch><br/>
+<year>2023</year><br/>
+<email>harshini@gmail.com</email></student><br/>
+<student>
+<RNo>20211CSE0044</RNo><br/>
+<Name>afreen</Name><br/>
+<college>Presidency university</college><br/>
+<branch>CSE</branch><br/>
+<year>2023</year><br/>
+<email>afreen@gmail.com</email></student><br/>
+</pu>

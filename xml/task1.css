@@ -1,0 +1,66 @@
+pu{
+background-color: lightblue;
+}
+student
+{
+display:block;
+margin-bottom:35pt;
+margin-left:0;
+}
+RNo{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: blueviolet;
+    font-size: large;
+    font-style: inherit;
+    text-decoration: dotted;
+    display:block;
+    margin-bottom:0;
+    margin-left:0;
+}
+Name{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color:aqua;
+    font-size: medium;
+    font-style: oblique;
+    text-decoration: dashed;
+    display:block;
+    margin-bottom:0;
+    margin-left:0;
+}
+college{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #000;
+    font-size: small;
+    font-style: normal;
+    text-decoration: line-through;
+    display:block;
+    margin-bottom:0;
+    margin-left:0;
+}
+branch{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: darkcyan;
+    font-size: x-large;
+    text-decoration: overline;
+    display:block;
+    margin-bottom:0;
+    margin-left:0;
+}
+year{
+    font-family: 'Times New Roman', Times, serif;
+    color: darkslateblue;
+    font-size: xx-large;
+    text-decoration: wavy;
+    display:block;
+    margin-bottom:0;
+    margin-left:0;
+}
+email{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: hotpink;
+    font-size: x-small;
+    text-decoration: double;
+    display:block;
+    margin-bottom:0;
+    margin-left:0;
+}

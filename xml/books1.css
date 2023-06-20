@@ -1,0 +1,97 @@
+book{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: larger;
+    display:block;
+    margin-bottom:0;
+    margin-left:0;
+}
+/*title{
+    float: left;
+}
+author{
+    float:right;
+}*/
+title{
+    display:block;
+    margin-bottom:0;
+    margin-left:0;
+}
+author{
+    float: right;
+}
+[category="naming"] title{
+    background-color: aliceblue;
+}
+[category="naming"] author{
+    background-color: aliceblue;
+}
+[category="cooking"] title{
+    background-color: aqua;
+}
+[category="cooking"] author{
+    background-color: aqua;
+}
+[category="children"] title{
+    background-color:cadetblue;
+
+}
+[category="children"] author{
+    background-color:cadetblue;
+}
+[category="web"] title{
+    background-color: hotpink;
+}
+[category="web"] author{
+    background-color: hotpink;
+}
+[cover="paperback"] title{
+    background-color:rgb(160, 194, 103);
+}
+[cover="paperback"] author{
+    background-color:rgb(160, 194, 103);
+}
+/*[category="cooking"]{
+    display:block;
+    margin-bottom:0;
+    margin-left:0;
+}
+[category="cooking"] title{
+    float: left;
+}
+[category="cooking"] author{
+    float: right;
+}
+[category="children"] {
+    display:block;
+    margin-bottom:0;
+    margin-left:0;
+}
+[category="children"] title{
+    float: left;
+
+}
+[category="children"] author{
+    float:right;
+}
+[category="web"]{
+    display:block;
+    margin-bottom:0;
+    margin-left:0;
+}
+[category="web"] title{
+    float: left;
+}
+[category="web"] author{
+    float: right;
+}
+[cover="paperback"]{
+    display:block;
+    margin-bottom:0;
+    margin-left:0;
+}
+[cover="paperback"] title{
+    float: left;
+}
+[cover="paperback"] author{
+    float:right;
+}*/
