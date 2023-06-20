@@ -1,0 +1,19 @@
+<html>
+    <body>
+        <script type="text/javascript">
+            function GetConfirm(){
+                var response=confirm("are you sure???");
+                if(response==true){
+                    alert("proceedd...")
+                    return true;
+                }
+                else{
+                    document.write("sorry..")
+                    return false;
+                }
+            }
+        </script>
+        <p>come over here and check what happens...</p>
+        <input type="button" onclick="GetConfirm();" name="ok" value="submit"/>
+    </body>
+</html>

@@ -1,0 +1,33 @@
+<html>
+    <body>
+        <script type="text/javascript">
+        function checking(){
+           var chck=document.forms['task1']['pname'].value;
+           var len=chck.length();
+           if(chck=""){
+            alert("Field should not be empty");
+            return false;
+           }
+           else if(len<=5){
+            alert("Name should be greater than 5 characters");
+            return false;
+           }
+           var chck2=document.forms['task1']['age'].value;
+           if(chck2=""){
+            alert("Field should not be empty");
+            return false;
+           }
+    }
+        </script>
+        <form name="task1" onsubmit="return checking();">
+            <legend>Enter your name:</legend>
+            <input type="text" name="pname" required pattern="[A-Za-z]{1,16}" title="Accept only alphabets"/>
+            <legend>Enter your age:</legend>
+            <input type="number" name="age" min="15" max="200"/>
+            <legend>select your gender:</legend>
+            <input type="radio" name="gender" value="male" checked/>Male<br/>
+            <input type="radio" name="gender" value="female"/>Female<br/>
+            <input type="submit" value="submit"/>
+        </form>
+    </body>
+</html>

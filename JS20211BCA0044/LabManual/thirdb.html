@@ -1,0 +1,47 @@
+<html>
+    <head>
+        <title>display on cursor content using js...</title>
+        <style type="text/css">
+            .para1{
+                width:300px;background-color: antiquewhite;position: absolute;top: 100px;left:200pz;z-index: 0;
+            }
+            .para2{
+                width:300px;background-color: rgb(163, 109, 147);position: absolute;top: 120px;left:240pz;z-index: 0;
+            }
+            .para3{
+                width:300px;background-color: rgb(55, 79, 156);position: absolute;top: 140px;left:280pz;z-index: 0;
+            }
+        </style>
+        <script type="text/javascript">
+            var toplayer="3";
+            var orginpos;
+            function mover(ToTop,pos){
+                //.style is for we are getting the value of the style.....>
+                var newtop=document.getElementById(ToTop).style;
+                newtop.zIndex="10";
+                //newtop have index of 10 so the top layer will display with 10 index when curser moves out it will go to original position which is of index 0...
+                toplayer=document.getElementById(ToTop).id;
+                orginpos=pos;
+            }
+            //event for moving back to original postion we are adding one more event k/as moveout
+            function moverout(){
+                document.getElementById(toplayer).style.zIndex=orginpos;
+            }
+        </script>
+
+    </head>
+    <body>
+        <center><h1>this is what makes you beautiful..</h1></center>
+        <div class="para1" id="1" onmouseover="mover('1','1');" onmouseout="moverout();">You're insecure, don't know what for
+            You're turning heads when you walk through the door
+            Don't need makeup to cover up
+            Being the way that you are is enough</div>
+                <div class="para2" id="2" onmouseover="mover('2','2');" onmouseout="moverout();">Everyone else in the room can see it
+                    Everyone else, but you, ooh</div>
+                    <div class="para3" id="3" onmouseover="mover('3','3');" onmouseout="moverout();">Baby, you light up my world like nobody else
+                        The way that you flip your hair gets me overwhelmed
+                        But when you smile at the ground, it ain't hard to tell
+                        You don't know, oh-oh
+                        You don't know you're beautiful</div>
+    </body>
+</html>

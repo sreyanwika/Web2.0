@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <title>Task one...wid js</title>
+        <script type="text/javascript">
+            function Review1(){
+                var x=document.forms["Form"]["Name"].value;
+                var n=x.length;
+                if(x==""){
+                    alert("should not be empty...");
+                    return false;
+                }
+                else if(n<=5){
+                    alert("the name should be greater than 5 charac");
+                    return false;
+                }
+                var x1=document.forms["Form"]["Age"].value;
+                if(x1==""){
+                    alert("should not be empty...");
+                    return false;
+                }
+                else if(x1<15 || x1>120){
+                    alert("age should be between 15 nad 120...");
+                    return false;
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <form name="Form" onsubmit="return Review1();">
+            Enter Name:<input type="text" name="Name" required pattern="[A-Za-z]{1,16}" title="input only alphabets"/><br>
+            Enter Your Age:<input type="number" name="Age" /><br>
+            Enter Your Gender:
+            <input type="radio" name="gender" value="male" required> Male <input type="radio" name="gender" value="female"> Female
+            <input type="submit" value="Enter"/>
+        </form>
+    </body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Class Signup</title>
+  <script>
+    function openForm() {
+      var username = document.getElementById("username").value;
+      if (username.length != 6) {
+        alert("Please enter a valid registration number.");
+        return;
+      }
+      var url = "new.html";
+      window.open(url, "_blank");
+    }
+ 
+
+  </script>
+</head>
+<body>
+  <h1>Class Signup</h1>
+  <form>
+    <label for="username">Username (Registration Number):</label>
+    <input type="text" id="username" name="username" required><br><br>
+    <input type="button" value="Register" onclick="openForm()">
+    
+  </form>
+  
+</body>
+</html>

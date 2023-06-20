@@ -1,0 +1,52 @@
+<html>
+    <head>
+        <script type="text/javascript">
+          function chck(){
+            var a=document.forms["For"]["Rno"].value;
+              if(a == ""){
+                alert("shldnt b empty");
+                return false;
+             }
+              var len=a.length;
+              if(len>6){
+                alert("rno should be of the 6");
+                return false;
+            }
+              else if(len<6){
+                alert("rno should be of 6 digits");
+                return false;
+            }
+             var c=document.GetElementById("Cadrss").value;
+             var b=document.GetElementById("answ").value;
+             if(b=="yes"){
+                document.getElementById("padrss").innerHTML = c;
+             } 
+             else{
+                alert("c");
+             }
+            document.getElementById("Fors").onsubmit = function() {myFunction()};
+
+            function myFunction() {
+            alert("The form was submitted");
+        }
+
+            }
+
+
+        </script>
+        </head>
+        <body>
+        <form name="For" id="Fors" onsubmit="return chck();">
+            <label>Roll No</label>
+            <input type="text" name="Rno"/><br>
+            <label>current address</label>
+            <input type="text" name="Cadrss" id="Cadrss"/><br>
+            <label>is your address same as permanent:</label>
+            <input type="radio" name="answ" value="yes" id="answ" required/>yes<br>
+            <input type="radio" name="answ" value="no" id="answ"/>no<br>
+            <label>permanent address</label>
+            <input type="text" name="padrss" value="padrss"/><br>
+            <input type="submit" value="submit"/>
+        </form>
+    </body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>fibonacci series in javaa</title>
+</head>
+<body bgcolor="canayon">
+<script>
+var v1 = 0, v2 = 1, nxt_num, i;
+var num = parseInt(prompt("enter d limit of fibaccinoo series"));
+//a>coding for finding fibonacci series of a num..
+document.write("fibonacci series");
+for(i = 0;i <= num;i++)
+{
+    document.write("<br>"+v1);
+     nxt_num = v1 + v2;
+     v1 = v2;
+       v2 = nxt_num;
+}
+//A table of numbers from 1 to n and their squares
+/*var msg="num and its squares...";
+if(num!=null && num>0)
+ for(i = 0;i <= num;i++){
+    msg=i+"="+i*i;
+    alert(msg);
+ }
+else
+  alert("number is not applicable...");*/
+var num1=prompt("enter the number:","");
+if(num1!=null && num1>0){
+ var msg="num and its squares...";
+ for(i = 0;i <= num1;i++){
+    msg=i+"="+i*i;
+    alert(msg);
+ }
+ 
+}
+else
+  alert("number is not applicable...");
+
+
+</script>
+</body>
+</html>

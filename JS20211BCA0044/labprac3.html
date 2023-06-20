@@ -1,0 +1,42 @@
+<html>
+    <body>
+        <script type="text/javascript">
+            function chckng(){
+              var chc=document.getElementById['usn'];
+              var chc1=document.getElementById['sem'];
+              var exp=/[0-4]{5}[A-Z]{3}[0-4]{4}$/;
+              if(chc==""){
+                alert("enter the usn");
+                return false;
+              }
+              else if(!usn.value.match(exp)){
+                alert("enter the correct usn");
+                return false;
+              }
+              var exp2=/[1-4][A-Z]{3}[0-1]{2}$/;
+              if(chc1==""){
+                alert("enter the sem");
+                return false;
+              }
+              else if(!sem.value.match(exp2)) {
+                alert("enter the correct sem");
+                return false;
+              }
+              else if(chc1.value<6){
+                alert("please Enter perfect sem code");
+                return false;
+
+              }
+            
+            }
+
+        </script>
+        <form name="actn" onsubmit="return chckng();">
+        <legend>Enter the usn:</legend>
+        <input type="text" name="usn" id="usn" title="enter valid usn"/>
+        <legend>Enter the sem:</legend>
+        <input type="text" name="sem" id="sem" title="enter valid usn"/>
+        <input type="submit"   value="submit"/>
+    </form>
+    </body>
+</html>

@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <title>validating usn numberr</title>
+    </head>
+    <body>
+        <script type="text/javascript">
+         function validation(){
+            var usn=document.getElementById("usn");
+            var sem=document.getElementById("sem");
+            var usnExp=/[0-9][0-9][0-9][0-9][0-9][A-Z][A-Z][A-Z][0-9][0-9][0-9][0-9]$/;
+            //another method for var usnExp=/[0-4]{5}[A-z]{3}[0-4]{4}$/;
+            if(usn==""){
+                document.write("please enter the rollnum");
+                /*usn.focus(); this is used when we use alert...
+                return false;*/
+            }
+            else if(!usn.value.match(usnExp)){
+                document.write("please enter the proper rollnum");
+                /*usn.focus(); this is used when we use alert...
+                return false;*/
+            }
+            else if(sem.value>=1 && sem.value<7){
+                document.write("proper rollnum was entered....");
+                document.write(" the sem  perfectttt");
+            }
+            else{
+                document.write("please enter the proper semcode");
+            }
+        }
+        </script>
+        Enter the rollnum:
+        <input type="text" name="usn" id="usn"/><br><br>
+        Enter the sem:
+        <input type="number" name="sem" id="sem"/>
+        <input type="submit" onclick="validation();" value="click"/>
+    </body>
+</html>

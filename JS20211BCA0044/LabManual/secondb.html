@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <title>validating usn numberr</title>
+    </head>
+    <body>
+        <script type="text/javascript">
+         function validation(){
+            var sem=document.getElementById("sem");
+            var semcode=document.getElementById("semcode");
+            var semExp=/[0-6][A-Z]{3}[0-9][0-9]$/;
+            if(sem.value.length==0){
+                document.write("please enter the sem");
+            }
+            else if(sem.value>=1 && sem.value<7){
+                if(!semcode.value.match(semExp)){
+                    document.write("please enter the proper semcode");
+                }
+                else{
+                    document.write(" the sem and semcode is perfectttt");
+                }
+            }
+        }
+        </script>
+        Enter the semester:
+        <input type="number" name="sem" id="sem"/><br><br>
+        Enter the semcode:
+        <input type="text" name="semcode" id="semcode"/>
+        <input type="submit" onclick="validation();" value="click"/>
+    </body>
+</html>

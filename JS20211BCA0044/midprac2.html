@@ -1,0 +1,108 @@
+<html>
+   <body>   
+      <script type="text/javascript">
+            var a = 33;
+            var b = 10;
+            var c = "Test";
+            var linebreak = "<br />";
+         
+            document.write("a + b = ");
+            result = a + b;
+            document.write(result);
+            document.write(linebreak);
+         
+            document.write("a - b = ");
+            result = a - b;
+            document.write(result);
+            document.write(linebreak);
+            document.write("a / b = ");
+            result = a / b;
+            document.write(result);
+            document.write(linebreak);
+         
+            document.write("a % b = ");
+            result = a % b;
+            document.write(result);
+            document.write(linebreak);
+         
+            document.write("a + b + c = ");
+            result = a + b + c;
+            document.write(result);
+            document.write(linebreak);
+         
+            a = ++a;
+            document.write("++a = ");
+            result = ++a;
+            document.write(result);
+            document.write(linebreak);
+         
+            b = --b;
+            document.write("--b = ");
+            result = --b;
+            document.write(result);
+            document.write(linebreak);
+            res=typeof c=="string"?"c is string":"c is no string";
+            document.write(res);
+            //if statements
+            document.write(linebreak);
+            var nme=prompt("enter name:");
+            if(typeof nme=="string"){
+                document.write("success..");
+            }
+            else{
+                document.write("please enter proper name..");
+            }
+            var cha=prompt("enter charac:if(addition-a,sub-s,mul-m)");
+            switch(cha){
+                case 'a':
+                    res=a+b;
+                    document.write("a+b:",res);
+                    break;
+                case 's':
+                    res=a-b;
+                    document.write("a-b:",res);
+                    break;
+                case 'm':
+                    res=a*b;
+                    document.write("axb:",res);
+                    break;
+                default:
+                    document.write("wrong charac entered...");
+                    break;
+            }
+            var count = 0;
+            
+            document.write("Starting Loop" + "<br />");
+          
+	        do
+	         {
+               document.write("Current Count : " + count + "<br />");
+               count++;
+             } while (count < 5);
+
+            document.write ("Loop stopped!");
+            function age(age1){
+                document.write("the age of d person is:",age1);
+            }
+            //confirmation dialog box...
+            function cnfrm(){
+             var user=confirm("enter your concer...ok or no:");
+             if(user==true){
+                document.write("ok letsss cntnue...");
+                return true;
+             }
+             else{
+                document.write("ok letsss endd...");
+                return false;
+             }
+            }
+ 
+
+      </script>
+      <form>
+        <input type="button" onclick="age(18);" value="enter"/><br/>
+        <input type="button" onclick="cnfrm();" value="enter1"/>
+      </form>
+      
+</body>
+</html>

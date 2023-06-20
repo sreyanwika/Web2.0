@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <title>Form with Title interaction...</title>
+        <script>
+            function returnvalue(){
+                var x=document.forms["Form"]["Name"].value;
+                if(x==""){
+                    alert("enter the name please...");
+                    return false;
+                }
+                else{
+                    document.write(x);
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <form name="Form" onsubmit="return returnvalue();">
+            Enter Name:<input type="text" name="Name"/>
+            <input type="submit" value="Enter"/>
+        </form>
+    </body>
+</html>
