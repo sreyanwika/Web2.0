@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    </head>
+    <body>
+        <div ng-app="prac" ng-controller="pracc">
+            <p>ENTER D FN:<input type="text" ng-model="FN"/></p>
+            <p>ENTER D SN:<input type="text" ng-model="SN"/></p>
+            <p>{{FN+" "+SN}}</p>
+            <script>
+                var a=angular.module('prac',[]);
+                a.controller('pracc',function($scope){
+                    $scope.FN='sreyaa';
+                    $scope.SN='anwika';
+
+                })
+            </script>
+            </div>
+            </body>
+            </html>

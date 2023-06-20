@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    </head>
+    <body ng-app="myy" ng-controller="last">
+        <div>
+            <h1 ng-click="func();">{{FN}}</h1>
+
+        </div>
+        <script type="text/javascript">
+            var a=angular.module("myy",[]);
+            a.controller("last",function($scope){
+               $scope.FN="riyaa";
+               $scope.func=function(){
+                $scope.FN="rahul";
+               }
+            });
+        </script>
+    </body>
+</html>

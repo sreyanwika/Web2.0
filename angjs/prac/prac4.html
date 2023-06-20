@@ -1,0 +1,12 @@
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    </head>
+    <body>
+        <div ng-app="" ng-init="col='blue'">
+            <p>Enter:<input type="text" style="background-color: {{col}};" ng-model="col"/></p>
+            <p>Enter:<input type="text" style="background-color: ng-bind='col';" ng-model="col"/></p>
+
+        </div>
+        </body>
+        </html>

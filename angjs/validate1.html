@@ -1,0 +1,16 @@
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    </head>
+    <body>
+        <div ng-app="">
+            <form name="ff" ng-init="emm ='hyy@gmail.com'">
+                <p>Enter your Email:</p>
+                <input type="email" ng-model="emm" name="email1"/>
+                <p>valid:{{ff.email1.$valid}}(if true,the it is valid)</p>
+                <p>dirty:{{ff.email1.$dirty}}(if true,the it is modified)</p>
+                <p>touched:{{ff.email1.$touched}}(if true,the it is toucheddd)</p>
+            </form>
+            </div>
+            </body>
+            </html>
