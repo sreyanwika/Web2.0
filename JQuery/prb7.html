@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <title>this is the frst jq prgrm..</title>
+        <script src="jq.js.js"></script>
+        <script>
+            //$(document).ready is used to execute d func wn d doc is fullyy loaded...
+            //mouseenter event is usedddd
+            $(document).ready(function(){
+             $("input").focus(function(){
+               $(this).css("background-color","grey");
+             });
+             $("input").blur(function(){
+               $(this).css("background-color","cyan");
+             });
+            });
+        </script>
+        <body>
+            <input type="text">Enter d name<br>
+            <input type="email">Enter d email<br>
+        </body>
+    </head>
+</html>
